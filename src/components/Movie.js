@@ -10,10 +10,10 @@ class Movie extends Component {
     return (
       <div className="card-group col-sm-4">
         <div className="card card-view mt-3">
-        <img src={this.props.imag} class="card-img-top"  alt="..."/> 
+        <img src={this.props.imag} class="card-img-top" alt="..."/> 
           <div className="card-body">
-            <h5 className="card-title h-20">{this.props.title}</h5> {/*Movie Title*/}
-            <p ClassName="card-text h-50">{this.props.description}</p> {/*Movie Description*/}
+            <h5 className="card-title h-10">{this.props.title}</h5> {/*Movie Title*/}
+            <p ClassName="card-text h-40">{this.props.description}</p> {/*Movie Description*/}
             <ul class="list-group list-group-flush">
                <li class="list-group-item h-10">Year: {this.props.year}</li> {/*Year of production*/}
                <li class="list-group-item h-10">{this.props.genre}</li> {/*Genre*/}
