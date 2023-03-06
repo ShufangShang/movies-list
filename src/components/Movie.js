@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../css/Movie.css';
 
-class Note extends Component {
+class Movie extends Component {
   constructor() {
     super();
   }
@@ -9,11 +9,11 @@ class Note extends Component {
   render() {
     return (
       <div className="card-group col-sm-4">
-        <div className="card card-view mt-0">
-        <img src="{this.image}" class="card-img-top" alt="..."/>
+        <div className="card card-view mt-3">
+        <img src={this.props.imag} class="card-img-top"  alt="..."/> 
           <div className="card-body">
             <h5 className="card-title h-20">{this.props.title}</h5> {/*Movie Title*/}
-            <p ClassName="card-text" h-50>{this.props.description}</p> {/*Movie Description*/}
+            <p ClassName="card-text h-50">{this.props.description}</p> {/*Movie Description*/}
             <ul class="list-group list-group-flush">
                <li class="list-group-item h-10">Year: {this.props.year}</li> {/*Year of production*/}
                <li class="list-group-item h-10">{this.props.genre}</li> {/*Genre*/}
@@ -31,5 +31,5 @@ class Note extends Component {
   }
 }
 
-export default Note;
+export default Movie;
 
